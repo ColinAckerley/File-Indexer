@@ -1,0 +1,10 @@
+There are several scenarios that we tested for. 
+1) Invalid input. In this case, it will inform the user what they did wrong. It will then exit the program.
+2) Given a file or directory that does not exist. In this case, it will inform the user of the issue and then exit.
+3) Given a file that does not have read access. This will inform the user they do not have read access and then exit. 
+3) Given just a file. This is the simplest case. Our program simply indexes all of the tokens within the file.
+4) Given a directory with no duplicate filenames. In this case, our program simply grabs each file in the directory and indexes it
+5) Given a directory with duplicate filenames. In this case, our program combines tokens of any files with duplicate names. 
+6) Given a huge file. This is just to test and make sure that we do not have a memory leak. Our program does run a bit slower (due to the open function), but it does not crash or give any memory issues. 
+7) Given a directory with a ton of subdirectories. This will also make sure we do not have any memory leaks. 
+8) Given empty files. This is an edge case check. This will return an XML skeleton with no tokens in it. 
